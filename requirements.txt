@@ -1,3 +1,4 @@
 streamlit
 pandas
-ydata-profiling
+ipykernel
+openpyxl
