@@ -1,3 +1,6 @@
 # Virtual environments
 .ke_venv
+
+# Large data files
 duration_mb_hospitals.pkl
+australia-latest.osm.pbf
