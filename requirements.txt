@@ -3,3 +3,4 @@ pandas
 ipykernel
 openpyxl
 geopandas
+neo4j
