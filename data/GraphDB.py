@@ -67,4 +67,3 @@ class GraphDB:
             "CREATE (h)-[:REACHABLE_VIA {distance_time: $distance_time}]->(s) "
         )
         tx.run(query, hospital_id=hospital_id, sa2_5dig=sa2_5dig, distance_time=distance_time)
-    
