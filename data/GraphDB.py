@@ -54,8 +54,6 @@ class GraphDB:
                description=description, sector=sector, beds=beds, latitude=latitude, 
                longitude=longitude)
 
-
-    ### ADD NOTE TO MEETING
     def add_relation_sa2_hospital(self, hospital_id, sa2_5dig, distance_time):
         with self.driver.session(database=self.database) as session:
             session.write_transaction(self._add_relation_sa2_hospital, hospital_id, sa2_5dig, distance_time)
