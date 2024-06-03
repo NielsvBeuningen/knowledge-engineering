@@ -4,3 +4,5 @@
 # Large data files
 duration_mb_hospitals.pkl
 australia-latest.osm.pbf
+
+__pycache__/
