@@ -4,3 +4,5 @@ ipykernel
 openpyxl
 geopandas
 neo4j
+plotly
+streamlit-agraph

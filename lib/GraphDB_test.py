@@ -65,3 +65,17 @@ class GraphDB:
             "CREATE (h)-[:REACHABLE_VIA {distance_time: $distance_time, accessible: $accessible, further_than_2h: $further_than_2h}]->(s) "
         )
         tx.run(query, hospital_id=hospital_id, sa2_5dig=sa2_5dig, distance_time=distance_time, accessible=accessible, further_than_2h=further_than_2h)
+        
+    def fetch_data(self, query):
+        graph = {}
+        with self.driver.session(database=self.database) as session:     
+            nodes = {}   
+            result = session.run(query)
+            for i, record in enumerate(result):
+                if record[0]["id"] not in nodes:
+                    nodes[record[0]["id"]] = {"node": record[0], "relations": []}
+                if record[1] is not None:
+                    nodes[record[0]["id"]]["relations"].append({"relation": record[1], "node": record[2]})
+                
+            graph = nodes
+        return graph

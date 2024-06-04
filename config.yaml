@@ -1,0 +1,17 @@
+DATABASE:
+  URI : "bolt://localhost:7687"
+  USER : "neo4j"
+  PASSWORD : "healthcare"  # Change this to your Neo4j database password
+  DBNAME : "maingraph"
+  CONTENTS:
+  - "Hospital"
+  - "SA2"
+
+VISUALIZATION:
+  COLORS:
+    Hospital: "#FFD700"
+    SA2: "#FF4500"
+
+MESSAGES:
+  ERRORS:
+    START: Error while starting the application
