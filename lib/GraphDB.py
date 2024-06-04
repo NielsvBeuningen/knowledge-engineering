@@ -1,4 +1,5 @@
 from neo4j import GraphDatabase
+import streamlit as st
 
 class GraphDB:
     def __init__(self, uri, user, password, database):
@@ -65,23 +66,38 @@ class GraphDB:
             "CREATE (h)-[:REACHABLE_VIA {distance_time: $distance_time, accessible: $accessible, further_than_2h: $further_than_2h}]->(s) "
         )
         tx.run(query, hospital_id=hospital_id, sa2_5dig=sa2_5dig, distance_time=distance_time, accessible=accessible, further_than_2h=further_than_2h)
-        
-    def fetch_data(self, categories, limit):
-        graph = {}
+      
+    def run_query(self, query: str) -> list | Exception:
         with self.driver.session(database=self.database) as session:     
-            for category in categories:  
-                nodes = {}   
-                query = f"""
-                MATCH (n:{category})
-                OPTIONAL MATCH (n)-[r]->(m)
-                RETURN n, r, m
-                LIMIT {limit}
-                """
-                result = session.run(query)
-                for i, record in enumerate(result):
-                    if record[0]["id"] not in nodes:
-                        nodes[record[0]["id"]] = {"node": record[0], "relations": []}
-                    nodes[record[0]["id"]]["relations"].append({"relation": record[1], "node": record[2]})
-                    
-                graph[category] = nodes
+            results = []  
+            result = session.run(query)
+            for record in result:
+                results.append(record)
+        return results
+
+        
+    def fetch_data(self, limit):
+        with self.driver.session(database=self.database) as session:     
+            graph = []  
+            query = f"""
+            OPTIONAL MATCH (n)-[r]->(m)
+            RETURN n, r, m
+            LIMIT {limit}
+            """
+            result = session.run(query)
+            for record in result:
+                if record[0].labels == {"Hospital"}:
+                    graph.append(
+                        {
+                            "hospital": record[0], 
+                            "sa2": record[2], 
+                            "relation": record[1]
+                        })
+                else:
+                    graph.append(
+                        {
+                            "hospital": record[2], 
+                            "sa2": record[0], 
+                            "relation": record[1]
+                        })
         return graph

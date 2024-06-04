@@ -5,4 +5,5 @@ openpyxl
 geopandas
 neo4j
 plotly
-streamlit-agraph
+networkx
+pyvis

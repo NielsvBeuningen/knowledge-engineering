@@ -11,7 +11,9 @@ VISUALIZATION:
   COLORS:
     Hospital: "#FFD700"
     SA2: "#FF4500"
+    Edge: "#9AB2FF"
 
 MESSAGES:
   ERRORS:
     START: Error while starting the application
+    QUERY: Error while querying the database
