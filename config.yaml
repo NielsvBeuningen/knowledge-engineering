@@ -9,11 +9,41 @@ DATABASE:
 
 VISUALIZATION:
   COLORS:
-    Hospital: "#FFD700"
-    SA2: "#FF4500"
-    Edge: "#9AB2FF"
+    Hospital: "#faca2b"
+    SA2: "#0068c9"
+    Edges:
+    # Green for closest, orange for mid, red for far
+      close: "#09ab3b"
+      mid: "#ff822B"
+      far: "#ff2b2b"
 
 MESSAGES:
   ERRORS:
     START: Error while starting the application
     QUERY: Error while querying the database
+
+EXAMPLE_QUERIES:
+  show_all:
+    query: "MATCH (n) RETURN n LIMIT 25"
+    description: "Show all nodes in the database"
+    key: "show_all"
+  show_hospitals:
+    query: "MATCH (n:Hospital) RETURN n LIMIT 25"
+    description: "Show all hospitals in the database"
+    key: "show_hospitals"
+  show_sa2:
+    query: "MATCH (n:SA2) RETURN n LIMIT 25"
+    description: "Show all SA2s in the database"
+    key: "show_sa2"
+  show_edges:
+    query: "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25"
+    description: "Show all edges in the database"
+    key: "show_edges"
+  show_accessible:
+    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {accessible: True}]->(m:SA2) RETURN n, r, m LIMIT 25"
+    description: "Show all hospitals that are accessible from SA2s"
+    key: "show_accessible_hospitals"
+  show_further_2h:
+    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {further_than_2h: True}]->(m:SA2) RETURN n, r, m LIMIT 25"
+    description: "Show all hospitals that are 2 hours away from SA2s"
+    key: "show_further_2h"

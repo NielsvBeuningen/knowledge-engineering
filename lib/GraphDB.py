@@ -65,15 +65,31 @@ class GraphDB:
             "MATCH (h:Hospital {id: $hospital_id}), (s:SA2 {id: $sa2_5dig}) "
             "CREATE (h)-[:REACHABLE_VIA {distance_time: $distance_time, accessible: $accessible, further_than_2h: $further_than_2h}]->(s) "
         )
-        tx.run(query, hospital_id=hospital_id, sa2_5dig=sa2_5dig, distance_time=distance_time, accessible=accessible, further_than_2h=further_than_2h)
+        tx.run(query, hospital_id=hospital_id, sa2_5dig=sa2_5dig, distance_time=float(distance_time), accessible=accessible, further_than_2h=further_than_2h)
       
     def run_query(self, query: str) -> list | Exception:
         with self.driver.session(database=self.database) as session:     
-            results = []  
+            # results = [] 
+            graph = []   
             result = session.run(query)
+            # for record in result:
+            #     results.append(record)
             for record in result:
-                results.append(record)
-        return results
+                if record[0].labels == {"Hospital"}:
+                    graph.append(
+                        {
+                            "hospital": record[0], 
+                            "sa2": record[2], 
+                            "relation": record[1]
+                        })
+                else:
+                    graph.append(
+                        {
+                            "hospital": record[2], 
+                            "sa2": record[0], 
+                            "relation": record[1]
+                        })
+        return graph
 
         
     def fetch_data(self, limit):

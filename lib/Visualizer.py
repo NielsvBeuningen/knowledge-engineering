@@ -13,18 +13,35 @@ class Visualizer:
         graph_data = ({
             'hospital': row["hospital"]["hospital_name"],
             'sa2': row["sa2"]["sa2_name"],
-            'distance_time': row["relation"]["distance_time"]} for row in data)
+            'distance_time': row["relation"]["distance_time"]} for row in data if None not in row.values())
         
         dict_data = {
-            'hospitals': {row["hospital"]["hospital_name"]: row["hospital"] for row in data} ,
-            'sa2': {row["sa2"]["sa2_name"]: row["sa2"] for row in data},
-            'relation': {f"{row["hospital"]["hospital_name"]}_{row["sa2"]["sa2_name"]}": row["relation"] for row in data}
+            'hospitals': {row["hospital"]["hospital_name"]: row["hospital"] for row in data if None not in row.values()} ,
+            'sa2': {row["sa2"]["sa2_name"]: row["sa2"] for row in data if None not in row.values()},
+            'relation': {f"{row["hospital"]["hospital_name"]}_{row["sa2"]["sa2_name"]}": row["relation"] for row in data if None not in row.values()}
             }
         
-        df_select = pd.DataFrame(graph_data)                
-                
-        # Create networkx graph object from pandas dataframe
-        G = nx.from_pandas_edgelist(df_select, 'hospital', 'sa2', ['distance_time'])
+        df_select = pd.DataFrame(graph_data, columns=['hospital', 'sa2', 'distance_time'])  
+
+        if len(df_select) > 0:
+            G = nx.from_pandas_edgelist(df_select, 'hospital', 'sa2', ['distance_time'])
+        else:
+            G = nx.Graph()
+
+        # Add nodes without edges
+        for row in data:
+            if None in row.values():
+                if row["hospital"] is not None:
+                    G.add_node(row["hospital"]["hospital_name"])
+                    dict_data["hospitals"][row["hospital"]["hospital_name"]] = row["hospital"]
+                if row["sa2"] is not None:
+                    G.add_node(row["sa2"]["sa2_name"])
+                    dict_data["sa2"][row["sa2"]["sa2_name"]] = row["sa2"]
+
+        # Check if graph is empty
+        if len(G.nodes) == 0:
+            st.error("No data to display")
+            st.stop()
 
         # Initiate PyVis network object
         network = Network(
@@ -39,7 +56,7 @@ class Visualizer:
         
         # Color nodes based on type
         for node in network.nodes:
-            if node["label"] in df_select["hospital"].unique():
+            if node["label"] in dict_data["hospitals"]:
                 related_data = dict_data["hospitals"][node["label"]]
                 node["color"] = colors["Hospital"]
                 node["title"] = f"""Hospital
@@ -65,10 +82,6 @@ class Visualizer:
                 Population Percentage: {round(related_data["pop_percentage"], 2)}
                 Population Density: {related_data["pop_density"]}
                 """
-                
-        # Color all edges with the same color
-        for edge in network.edges:
-            edge["color"] = colors["Edge"]
 
         # Generate network with specific layout settings
         # network.repulsion(
@@ -85,13 +98,33 @@ class Visualizer:
         
         # Add hover functionality
         for edge in network.edges:
-            edge["title"] = f"Travel time: {round(float(edge['distance_time']), 2)} seconds"
+            dict_key = f"{edge['from']}_{edge['to']}"
+            if dict_key not in dict_data["relation"]:
+                dict_key = f"{edge['to']}_{edge['from']}"
+            related_data = dict_data["relation"][dict_key]
+            edge["title"] = f"""Travel time: {round(float(edge['distance_time']), 2)} seconds
+            Accessible: {related_data["accessible"]}
+            Further than 2 hours: {related_data["further_than_2h"]}
+            """
+            
             edge["value"] = edge["distance_time"]
+            
+            distance_time = float(edge["distance_time"])
+            if distance_time > 7200:
+                edge["color"] = colors["Edges"]["far"]
+            elif distance_time > 1800:
+                edge["color"] = colors["Edges"]["mid"]
+            else:
+                edge["color"] = colors["Edges"]["close"]
 
         # Save and read graph as HTML file (on Streamlit Sharing)
         file_path = os.path.join("pyvis_graph.html")
         network.save_graph(file_path)
         HtmlFile = open(file_path, 'r', encoding='utf-8')
+
+        col1, col2 = st.columns(2)
+        col1.warning("Hospital Nodes are yellow")
+        col2.info("SA2 Region Nodes are blue")
 
         # Load HTML file in HTML component for display on Streamlit page
         components.html(HtmlFile.read(), height=height)
