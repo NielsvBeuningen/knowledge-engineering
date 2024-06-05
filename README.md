@@ -1,4 +1,4 @@
-# LOE BV. Knowledge Base
+# LOE BV. Knowledge Base Guide
 ## Table of Contents
 1. [Setup Repository](#setup-repository)
 2. [Setup Knowledge Graph](#setup-knowledge-graph)
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 Download and install Neo4j Desktop from the [official website](https://neo4j.com/download/).
 
 ### Create Database Management System (DBMS)
-Load the database dump file for the main graph stored in this repository under `data/processed/maingraph.dump` into Neo4j Desktop. This can be done following this guide: [Importing Data into Neo4j](https://neo4j.com/docs/operations-manual/current/backup-restore/restore-dump/).
+Load the database dump file for the main graph stored in this repository under `data/processed/maingraph.dump` into Neo4j Desktop. This can be done following this guide: [Importing Data into Neo4j](https://neo4j.com/docs/desktop-manual/current/operations/create-from-dump/).
 
 ### Start Database
 Start the DBMS in Neo4j Desktop. The database should now be running on `bolt://localhost:7687`.

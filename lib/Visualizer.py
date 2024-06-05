@@ -128,4 +128,3 @@ class Visualizer:
 
         # Load HTML file in HTML component for display on Streamlit page
         components.html(HtmlFile.read(), height=height)
-                    

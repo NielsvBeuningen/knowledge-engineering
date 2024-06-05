@@ -19,8 +19,8 @@ VISUALIZATION:
 
 MESSAGES:
   ERRORS:
-    START: Error while starting the application
-    QUERY: Error while querying the database
+    START: Error while starting the application, have you started the Neo4j database?
+    QUERY: Error while querying the database. Please check the query and try again.
 
 EXAMPLE_QUERIES:
   show_all:
