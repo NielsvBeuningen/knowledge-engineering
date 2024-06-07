@@ -141,6 +141,17 @@ with tab1:
                     columns=st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["SA2"]
                     ).set_index(st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["SA2"]["sa2_name"])
             elif category == "Distances":
+                method = st.radio(
+                    label="Select a filtering method",
+                    options=[
+                        "Show All",
+                        "Group by Hospital",
+                        "Group by SA2"
+                        ]
+                )
+                
+                
+                
                 filtered_data = [{
                     "hospital_name": record["hospital"]["hospital_name"],
                     "sa2": record["sa2"]["sa2_name"],
