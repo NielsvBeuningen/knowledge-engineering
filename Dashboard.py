@@ -8,6 +8,8 @@ from lib.Visualizer import Visualizer
 import yaml
 from yaml.loader import SafeLoader
 
+import pandas as pd
+
 try:
     if "config" not in st.session_state:
         with open('config.yaml') as config_file:
@@ -23,6 +25,9 @@ try:
         
     if "visualizer" not in st.session_state:
         st.session_state.visualizer = Visualizer()
+        
+    if "graph_results" not in st.session_state:
+        st.session_state.graph_results = None
         
     if "graph_database" not in st.session_state:
         st.session_state.graph_database = None
@@ -65,26 +70,65 @@ with tab1:
             key="query_input")
     
     if st.button("Run Query"):
-        graph_results = st.session_state.db.run_query(
+        st.session_state.graph_results = st.session_state.db.run_query(
             query = query_input
             )
         
+    
+    if st.session_state.graph_results is None:
+        st.info("Please run a query to see the results.")
+    else:
         st.header("Results")
-        st.subheader("Graph")
-        st.write(f"""
-                 The graph below shows the relationships between the nodes in the query.
-                 You can hover over the nodes and edges to see more information.
-                 """)
-        st.write(f"""
-                 **:green[Green]** edges are closer than 30 minutes. 
-                 **:orange[Orange]** edges are between 30 minutes and 2 hours. 
-                 **:red[Red]** edges are further than 2 hours.
-                 """)
-        st.session_state.visualizer.graph_display(
-            graph_results, 
-            colors = st.session_state.config["VISUALIZATION"]["COLORS"],
-            height = 600
-            )
+        subtab1, subtab2 = st.tabs(["Graph", "Table"])
+        
+        with subtab1:
+            st.subheader("Graph")
+            st.write(f"""
+                    The graph below shows the relationships between the nodes in the query.
+                    You can hover over the nodes and edges to see more information.
+                    """)
+            st.write(f"""
+                    **:green[Green]** edges are closer than 30 minutes. 
+                    **:orange[Orange]** edges are between 30 minutes and 2 hours. 
+                    **:red[Red]** edges are further than 2 hours.
+                    """)
+            st.session_state.visualizer.graph_display(
+                data = st.session_state.graph_results, 
+                colors = st.session_state.config["VISUALIZATION"]["COLORS"],
+                height = 600
+                )
+        with subtab2:
+            data = st.session_state.graph_results
+            
+            category = st.selectbox(
+                label="Select a category to display",
+                options=["Hospitals", "SA2s", "Distances"]
+                )
+            
+            if category == "Hospitals":
+                filtered_data = [record["hospital"] for record in data]
+                # Use hospital name as index
+                filtered_data = pd.DataFrame(filtered_data).set_index("hospital_name")
+                # filtered_data = filtered_data.drop(columns=["hospital_name"])
+            elif category == "SA2s":
+                filtered_data = [record["sa2"] for record in data]
+                filtered_data = pd.DataFrame(filtered_data).set_index("sa2_name")
+            elif category == "Distances":
+                st.write(data)
+                filtered_data = [{
+                    "hospital_name": record["hospital"]["hospital_name"],
+                    "sa2": record["hospital"]["hospital_name"],
+                    "distance (seconds)": record["relation"]["distance_time"],
+                    "accessible": record["relation"]["accessible"],
+                    "further_than_2_hours": record["relation"]["further_than_2h"],
+                     
+                     } for record in data]
+                filtered_data = pd.DataFrame(filtered_data)
+            
+            # Drop duplicates
+            filtered_data = filtered_data.drop_duplicates()
+            
+            st.dataframe(filtered_data)
 
 with tab2:
     st.header("Explore Knowledge Graph")
