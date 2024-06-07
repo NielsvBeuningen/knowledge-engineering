@@ -7,3 +7,4 @@ neo4j
 plotly
 networkx
 pyvis
+PyYAML

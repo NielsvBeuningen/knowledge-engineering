@@ -9,7 +9,13 @@ class Visualizer:
     def __init__(self):
         pass
     
-    def graph_display(self, data, colors, height=600):
+    # Define a function to normalize population sizes
+    def normalize_population(self, pop, min_pop, max_pop, min_size=10, max_size=50):
+        # Normalizes population to a range between min_size and max_size
+        return min_size + (pop - min_pop) * (max_size - min_size) / (max_pop - min_pop)
+
+    
+    def graph_display(self, data: list, colors: dict, height: int = 600, node_distance: int = 500, population_scaling: bool = False):
         graph_data = ({
             'hospital': row["hospital"]["hospital_name"],
             'sa2': row["sa2"]["sa2_name"],
@@ -53,7 +59,13 @@ class Visualizer:
 
         # Take Networkx graph and translate it to a PyVis graph format
         network.from_nx(G)
+            
+        # Get max and min population values for normalization
+        max_population = max(data["population"] for data in dict_data["sa2"].values())
+        min_population = min(data["population"] for data in dict_data["sa2"].values())
+
         
+                
         # Color nodes based on type
         for node in network.nodes:
             if node["label"] in dict_data["hospitals"]:
@@ -82,19 +94,19 @@ class Visualizer:
                 Population Percentage: {round(related_data["pop_percentage"], 2)}
                 Population Density: {related_data["pop_density"]}
                 """
+                # Scale node size based on population
+                if population_scaling:
+                    node["size"] = self.normalize_population(related_data["population"], min_population, max_population)
 
-        # Generate network with specific layout settings
-        # network.repulsion(
-        #     node_distance=420,
-        #     central_gravity=0.33,
-        #     spring_length=110,
-        #     spring_strength=0.10,
-        #     damping=0.95
-        # )
-        
-        # Add legend to the graph
-        # network.add_node("Hospital", color=colors["Hospital"], x=-600, y=-400, fixed=True)
-        # network.add_node("SA2", color=colors["SA2"], x=-600, y=-300, fixed=True)
+
+        # Adjust network with specific layout settings
+        network.repulsion(
+            node_distance=node_distance,
+            central_gravity=0.33,
+            spring_length=110,
+            spring_strength=0.10,
+            damping=0.95
+        )
         
         # Add hover functionality
         for edge in network.edges:

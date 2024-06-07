@@ -16,34 +16,60 @@ VISUALIZATION:
       close: "#09ab3b"
       mid: "#ff822B"
       far: "#ff2b2b"
+  COLUMN_NAMING:
+    HOSPITALS:
+      hospital_name: "Hospital Name"
+      address: "Address"
+      latitude: "Latitude"
+      longitude: "Longitude"
+      phone_number: "Phone Number"
+      website: "Website"
+      beds: "Number of Beds"
+      description: "Description"
+      id: "ID"
+      lhn: "Local Health Network"
+      phn: "Primary Health Network"
+      postcode: "Postcode"
+      sector: "Sector"
+      state: "State"
+      suburb: "Suburb"
+    SA2:
+      sa2_name: "SA2 Name"
+      area: "Area"
+      id: "SA2 code"
+      pop_density: "Population Density"
+      pop_percentage: "Population Percentage"
+      population: "Population"
 
 MESSAGES:
   ERRORS:
     START: Error while starting the application, have you started the Neo4j database?
     QUERY: Error while querying the database. Please check the query and try again.
 
+DEFAULT_QUERY: "MATCH (n)-[r]->(m) RETURN n, r, m"
+
 EXAMPLE_QUERIES:
   show_all:
-    query: "MATCH (n) RETURN n LIMIT 25"
+    query: "MATCH (n) RETURN n"
     description: "Show all nodes in the database"
     key: "show_all"
   show_hospitals:
-    query: "MATCH (n:Hospital) RETURN n LIMIT 25"
+    query: "MATCH (n:Hospital) RETURN n"
     description: "Show all hospitals in the database"
     key: "show_hospitals"
   show_sa2:
-    query: "MATCH (n:SA2) RETURN n LIMIT 25"
+    query: "MATCH (n:SA2) RETURN n"
     description: "Show all SA2s in the database"
     key: "show_sa2"
   show_edges:
-    query: "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25"
+    query: "MATCH (n)-[r]->(m) RETURN n, r, m"
     description: "Show all edges in the database"
     key: "show_edges"
   show_accessible:
-    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {accessible: True}]->(m:SA2) RETURN n, r, m LIMIT 25"
+    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {accessible: True}]->(m:SA2) RETURN n, r, m"
     description: "Show all hospitals that are accessible from SA2s"
     key: "show_accessible_hospitals"
   show_further_2h:
-    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {further_than_2h: True}]->(m:SA2) RETURN n, r, m LIMIT 25"
+    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {further_than_2h: True}]->(m:SA2) RETURN n, r, m"
     description: "Show all hospitals that are 2 hours away from SA2s"
     key: "show_further_2h"

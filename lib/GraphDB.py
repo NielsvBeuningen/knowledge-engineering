@@ -67,13 +67,11 @@ class GraphDB:
         )
         tx.run(query, hospital_id=hospital_id, sa2_5dig=sa2_5dig, distance_time=float(distance_time), accessible=accessible, further_than_2h=further_than_2h)
       
-    def run_query(self, query: str) -> list | Exception:
+    def run_query(self, query: str, query_limit: int) -> list | Exception:
         with self.driver.session(database=self.database) as session:     
-            # results = [] 
             graph = []   
+            query = f"{query} LIMIT {query_limit}"
             result = session.run(query)
-            # for record in result:
-            #     results.append(record)
             for record in result:
                 if record[0].labels == {"Hospital"}:
                     graph.append(
