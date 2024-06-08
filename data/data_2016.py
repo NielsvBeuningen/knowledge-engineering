@@ -38,6 +38,7 @@ df["POPULATION_DENSITY_2016"] = [df.loc[i,"NR_OF_PEOPLE_2016"]/df.loc[i,"AREA_SQ
 
 columns = [
     'SA2_CODE_2016',
+    "SA2_NAME_2016",
     'SA2_5DIG16',
     'AREA_SQKM',
     'NR_OF_PEOPLE_2016',
