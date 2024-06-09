@@ -18,7 +18,7 @@ class GraphDB:
     @staticmethod
     def _create_sa2(tx, sa2_5dig, sa2_name, area):
         query = (
-            "CREATE (s:SA2 {id: $sa2_5dig, sa2_name: $sa2_name, area: $area}) "
+            "CREATE (s:SA2 {id: $sa2_5dig, sa2_name: $sa2_name, area: $area})"
         )
         tx.run(query, sa2_5dig=sa2_5dig, sa2_name=sa2_name, area=area)
 

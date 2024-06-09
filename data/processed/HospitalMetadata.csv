@@ -1,4 +1,4 @@
-hospital_name,phone_number,address,suburb,postcode,state,local_hospital_network,Primary Health Network area (PHN),website,description,sector,beds,Latitude,longitude,Hospital_ID
+hospital_name,phone_number,address,suburb,postcode,state,local_hospital_network,primary_health_network,website,description,sector,beds,latitude,longitude,hospital_ID
 Abbotsford Private Hospital,08 9200 6282,61 Cambridge Street,West Leederville,6007,WA,,,www.abbotsfordhospital.com.au,,Private,<50,-31.940992,115.837344,1
 Adelaide Clinic,08 8269 8100,33 Park Terrace,Gilberton,5081,SA,,,www.adelaideclinic.com.au/,,Private,50-99,-34.90658,138.613167,2
 Adelaide Day Surgery Pty Ltd,08 8239 4900,18 North Terrace,Adelaide,5000,SA,,,http://www.curagroup.com.au/adelaide-day-surgery,,Private,<50,-34.922409,138.588817,3
