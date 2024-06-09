@@ -61,7 +61,7 @@ class GraphDB:
     @staticmethod
     def _add_relation_sa2_hospital(tx, hospital_id, sa2_5dig, distance_time):
         query = (
-            "MATCH (s:SA2 {id: $sa2_5dig}) (h:Hospital {id: $hospital_id}) "
+            "MATCH (s:SA2 {id: $sa2_5dig}), (h:Hospital {id: $hospital_id}) "
             "CREATE (h)-[:REACHABLE_VIA {distance_time: $distance_time}]->(s) "
         )
         tx.run(query, hospital_id=hospital_id, sa2_5dig=sa2_5dig, distance_time=distance_time)
