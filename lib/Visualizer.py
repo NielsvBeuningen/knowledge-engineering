@@ -59,12 +59,11 @@ class Visualizer:
 
         # Take Networkx graph and translate it to a PyVis graph format
         network.from_nx(G)
-            
-        # Get max and min population values for normalization
-        max_population = max(data["population"] for data in dict_data["sa2"].values())
-        min_population = min(data["population"] for data in dict_data["sa2"].values())
 
-        
+        if population_scaling and len(dict_data["sa2"]) > 0:
+            # Get max and min population values for normalization
+            max_population = max(data["population"] for data in dict_data["sa2"].values())
+            min_population = min(data["population"] for data in dict_data["sa2"].values())
                 
         # Color nodes based on type
         for node in network.nodes:

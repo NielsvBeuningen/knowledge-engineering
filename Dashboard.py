@@ -108,6 +108,7 @@ with tab1:
                 value=500,
                 key="node_distance_query"
                 )
+            
             scale_pop_query = config_query.checkbox(
                 label="Scale node size based on population",
                 value=True
@@ -120,6 +121,7 @@ with tab1:
                 node_distance = node_distance_query,
                 population_scaling = scale_pop_query
                 )
+
         with subtab2:
             data = st.session_state.graph_results
             
@@ -153,8 +155,8 @@ with tab1:
                 
                 
                 filtered_data = [{
-                    "hospital_name": record["hospital"]["hospital_name"],
-                    "sa2": record["sa2"]["sa2_name"],
+                    "hospital_name": record["hospital"]["hospital_name"] if record["hospital"] is not None else None,
+                    "sa2": record["sa2"]["sa2_name"] if record["sa2"] is not None else None,
                     "distance (seconds)": record["relation"]["distance_time"],
                     "accessible": record["relation"]["accessible"],
                     "further_than_2_hours": record["relation"]["further_than_2h"],
