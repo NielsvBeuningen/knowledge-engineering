@@ -2,7 +2,7 @@ DATABASE:
   URI : "bolt://localhost:7687"
   USER : "neo4j"
   PASSWORD : "healthcare"  # Change this to your Neo4j database password
-  DBNAME : "maingraph"
+  DBNAME : "neo4j"
   CONTENTS:
   - "Hospital"
   - "SA2"
