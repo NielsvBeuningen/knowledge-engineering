@@ -131,43 +131,51 @@ with tab1:
                 )
             
             if category == "Hospitals":
-                filtered_data = [record["hospital"] for record in data]
-                # Use hospital name as index
-                filtered_data = pd.DataFrame(filtered_data).rename(
-                    columns=st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["HOSPITALS"]
-                    ).set_index(st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["HOSPITALS"]["hospital_name"])
-                # filtered_data = filtered_data.drop(columns=["hospital_name"])
+                filtered_data = [record["hospital"] for record in data if record["hospital"] is not None]
+                if len(filtered_data) > 0:
+                    filtered_data = pd.DataFrame(filtered_data).rename(
+                        columns=st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["HOSPITALS"]
+                        ).set_index(st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["HOSPITALS"]["hospital_name"])
+
             elif category == "SA2s":
-                filtered_data = [record["sa2"] for record in data]
-                filtered_data = pd.DataFrame(filtered_data).rename(
-                    columns=st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["SA2"]
-                    ).set_index(st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["SA2"]["sa2_name"])
+                filtered_data = [record["sa2"] for record in data if record["sa2"] is not None]
+                if len(filtered_data) > 0:
+                    filtered_data = pd.DataFrame(filtered_data).rename(
+                        columns=st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["SA2"]
+                        ).set_index(st.session_state.config["VISUALIZATION"]["COLUMN_NAMING"]["SA2"]["sa2_name"])
             elif category == "Distances":
-                method = st.radio(
-                    label="Select a filtering method",
-                    options=[
-                        "Show All",
-                        "Group by Hospital",
-                        "Group by SA2"
-                        ]
-                )
-                
-                
-                
-                filtered_data = [{
-                    "hospital_name": record["hospital"]["hospital_name"] if record["hospital"] is not None else None,
-                    "sa2": record["sa2"]["sa2_name"] if record["sa2"] is not None else None,
-                    "distance (seconds)": record["relation"]["distance_time"],
-                    "accessible": record["relation"]["accessible"],
-                    "further_than_2_hours": record["relation"]["further_than_2h"],
-                     
-                     } for record in data]
-                filtered_data = pd.DataFrame(filtered_data)
+                hospitals = [record["hospital"] for record in data if record["hospital"] is not None]
+                sa2 = [record["sa2"] for record in data if record["sa2"] is not None]
+                if len(hospitals) and len(sa2) > 0:
+                    method = st.radio(
+                        label="Select a filtering method",
+                        options=[
+                            "Show All",
+                            "Group by Hospital",
+                            "Group by SA2"
+                            ]
+                    )
+                    
+                    filtered_data = [{
+                        "hospital_name": record["hospital"]["hospital_name"] if record["hospital"] is not None else None,
+                        "sa2": record["sa2"]["sa2_name"] if record["sa2"] is not None else None,
+                        "distance (seconds)": record["relation"]["distance_time"] if record["relation"] is not None else None,
+                        "accessible": record["relation"]["accessible"] if record["relation"] is not None else None,
+                        "further_than_2_hours": record["relation"]["further_than_2h"] if record["relation"] is not None else None,
+                        
+                        } for record in data]
+                    filtered_data = pd.DataFrame(filtered_data)
+                else:
+                    filtered_data = []
             
-            # Drop duplicates
-            filtered_data = filtered_data.drop_duplicates()
             
-            st.dataframe(filtered_data)
+            
+            if len(filtered_data) > 0:
+                # Drop duplicates
+                filtered_data = filtered_data.drop_duplicates()
+                st.dataframe(filtered_data)
+            else:
+                st.info("No data to display")
 
 with tab2:
     st.header("Explore Knowledge Graph")
