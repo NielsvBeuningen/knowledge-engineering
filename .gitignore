@@ -6,3 +6,9 @@ duration_mb_hospitals.pkl
 australia-latest.osm.pbf
 
 __pycache__/
+
+# Pyvis stuff
+bindings/
+tom-select/
+vis-9.1.2/
+pyvis_graph.html

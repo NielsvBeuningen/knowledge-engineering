@@ -4,3 +4,7 @@ ipykernel
 openpyxl
 geopandas
 neo4j
+plotly
+networkx
+pyvis
+PyYAML
