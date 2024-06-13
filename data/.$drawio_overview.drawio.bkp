@@ -1,1 +1,659 @@
-<mxfile host="Electron" modified="2024-05-19T11:15:28.898Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/13.9.9 Chrome/85.0.4183.121 Electron/10.1.5 Safari/537.36" etag="mlhnfXijrH-ceaWWJKKt" version="13.9.9" type="device" pages="4"><diagram id="oVoAqLocb0QwInsg7ZnG" name="Overview">7VpdV+I4GP41nLN7AadN2gKXII66Oqs7nHGcveGENtBqaDANX/76TdsE+hERR4rsKDc0b5I2eZ8nT9581ODJZHnG0NT/Sj1MasDwljXYqwEAQdMRf7FllVqA1TZTy5gFXmrLGPrBE5ZGQ1pngYejXEFOKeHBNG90aRhil+dsiDG6yBcbUZL/6hSNccnQdxEpW38EHvdTa8s2NvZzHIx99WXTkDkTpApLQ+Qjjy4yJnhagyeMUp4+TZYnmMTeU35J6315JnfdMIZDvkuF2ZVR/8e/PGePD93r79HkEnq4Lt8yR2QmOywby1fKA4zOQg/HLzFrsLvwA477U+TGuQsBurD5fEJkNkFDTLrIfRgn1U4ooUxkhTQU5bsjGvIvaBKQmA23mHkoRLE5IESVrAE4RG7Lg8IecUYfcCYHQMuyRUu65b6rjmDG8TJjkr44w3SCOVuJIjK3biukJDXrpuLcYgO06Sik/QzKLSiNSLJrvH79BgDxIDHQ49Hu28B8OsORj9Hwwro768yX9XbJ/dgTfJRJyrhPxzRE5HRj7W4AMkRqU+aK0qmE5R5zvpKDC804zYMmnMhWd7J+kviZTfSWuVTsLrMNGyawle0Gs0D0HzNZMAVOjRd7C/LCnMHXSH7SLpsLjG14R3TGXOmp3qCDev3TUf/i36fr094tbQaWIjhHbIz5tnJ2WjB291b6MEwQD+Z5edDxIKnaYQytMgWmNAh5lHnzTWzYsLJZIKVTHNQvlLdgu8DBtAUbRq67shNJt/k0JxoO4TGpYI68zuMsVrcEzvpIwt9JBhOZYx64KMHWSPKjBO84VyC9TDNIEOK6GnlxltmWWerV4mks/4n6VPxG5OaboDiXqfhcQzUNKX7tnEbTgCPyFXPkIY7U14U70wbkGyXMsWeU8S0CW9BKD+HWyNVppeO28HD0mrG0u3ZCUGCpUVZOaGmE06pKN5tHpJuNtS5qlHOdOmLNBMeqmTmK7EHIwKeQSSHrBRFHofjUxxYy6Ly3kMH/k5AdkWZZZc36KzD89viRdelieb5it2c/7jsqdtmfZO2K9rZWv0GA5msfb1WZZ5WpKAidbn9wQ6ezuPc0HKDQG0wxnRI8GK4Gop456HfA4I+uCHz+bLjR/ADKYOOWZ+mUoQWG0HGqUYa61cxLg6mJcZymbnFYlTRYn9LwS9Lg7BjOgKOSBme/0rCHyMSbsVQUIgQGvgwcosb0gfy+IuDkRWA9uLMi4BxSBMySWz9FYKd9IGPXRc1RqYBq9gdeokxWa62pu6IOcnndE+FHILQnH4AceMVyHJJkH1KStm4DvJKjO0B/WKL9jal1LwpchnRBkvEPjORY600Ui3w0jR/dlRhgHmbwZaINU1ZeDdeG9YHK9YzH41Ta0071TLvMTmwKfjZ17Gw7TYgqYmezEDQDy2kAu8RPU3eoIqLphl3RrGl/zpq/thO46/HJccXO4O0nFAcJngeRL3iFI/6hgmhLt5KuasZiKPj+7WF2gv2feAD9q477dH8kp97PjF7EXIUA3A8CrXbhpFuzy2nqAIBGVQhs33lPuX+Fxzj0dhsWwhM8j0me4wqKzICQJkSCcRjPz8K/8WFMN/ariJZJR2ZMAs9LJgQdCfKTxF55sAfg23YBeLsMvG53G1QFOyzB/g0thKGHOIrEBPMOo/DVErkPXMwCLkAzIIEGGKcqYMob0TeMujiKhPOPCZ6XT4kqgKf53uiUF1iaNcoeA4UdFg8VuNnUTUtV+Vm7TGiVvHiUt69aZuOAd6/wMuB3qq3iObOIEalN8+KEWsI8y47simPb+dzx3T3Y7f6Vab3uvhYEzQJr33Zfa5tPq14NFZc8/Q7Q3I/6re8PmJqJvLL7A9oLvVsCa6Ac30sQMS5EwDtOV6UidS16PQ/wIgsV2A9UFS2P7D2B2LLzwZhmQ9Vq7WcaEsnNhe90eG/uzcPT/wA=</diagram><diagram id="xrRu4EcnShG1vXp3CMwB" name="Hospitals">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</diagram><diagram id="UN4q3NZjBNGZeDe67gBp" name="Distance">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</diagram><diagram id="9zW0G7RWSUy38F1n-XtX" name="Population">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</diagram></mxfile>
+<mxfile host="Electron" modified="2024-06-04T12:31:03.320Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="1Jpxz13y803hWhf4c85r" version="24.4.8" type="device" pages="8">
+  <diagram id="oVoAqLocb0QwInsg7ZnG" name="Overview">
+    <mxGraphModel dx="2493" dy="2683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uL0-QhKHrqkBOUsmK3de-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="-500" y="-110" width="1650" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="9S521zGesheabI4XGAvx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=193.125;entryPerimeter=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" parent="1" source="D_AaDSEfSIZzOEDVo7i4-1" target="D_AaDSEfSIZzOEDVo7i4-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="620" />
+              <mxPoint x="700" y="439" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_AaDSEfSIZzOEDVo7i4-1" value="&lt;h3 style=&quot;font-family: helvetica; font-size: 20px; line-height: 19px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;HospitalMetadata&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="320" y="600" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9S521zGesheabI4XGAvx-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" parent="1" source="D_AaDSEfSIZzOEDVo7i4-2" target="D_AaDSEfSIZzOEDVo7i4-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_AaDSEfSIZzOEDVo7i4-2" value="&lt;h3 style=&quot;font-family: helvetica; font-size: 20px; line-height: 19px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;HospitalDistance&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="320" y="420" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9S521zGesheabI4XGAvx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" parent="1" source="D_AaDSEfSIZzOEDVo7i4-4" target="Ji0h9gqrBowxHyrVGWjA-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_AaDSEfSIZzOEDVo7i4-4" value="&lt;h3 style=&quot;font-family: verdana; line-height: 19px; font-size: 20px;&quot;&gt;ABS_Population_and_people_by_2021_SA2_(Beta).csv&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="-470" y="100" width="670" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9S521zGesheabI4XGAvx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="D_AaDSEfSIZzOEDVo7i4-6" target="D_AaDSEfSIZzOEDVo7i4-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z4Offm902AwKw3nhDxk-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;" edge="1" parent="1" source="D_AaDSEfSIZzOEDVo7i4-6" target="0Z4Offm902AwKw3nhDxk-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_AaDSEfSIZzOEDVo7i4-6" value="&lt;h3 style=&quot;font-family: verdana; font-size: 20px; line-height: 19px;&quot;&gt;duration_sa2_hospitals.pkl&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="280" width="660" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9S521zGesheabI4XGAvx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" parent="1" source="D_AaDSEfSIZzOEDVo7i4-10" target="D_AaDSEfSIZzOEDVo7i4-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_AaDSEfSIZzOEDVo7i4-10" value="&lt;h3 style=&quot;font-family: helvetica; font-size: 20px; line-height: 19px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;myhospitals-contact-details.csv&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="580" width="660" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D_AaDSEfSIZzOEDVo7i4-15" value="&lt;h3 style=&quot;font-size: 20px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;Neo4j Knowledge Graph&lt;/font&gt;&lt;/h3&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="770" y="246.25" width="150" height="267.5" as="geometry" />
+        </mxCell>
+        <mxCell id="9S521zGesheabI4XGAvx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" parent="1" source="D_AaDSEfSIZzOEDVo7i4-21" target="D_AaDSEfSIZzOEDVo7i4-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_AaDSEfSIZzOEDVo7i4-21" value="&lt;h3 style=&quot;font-family: verdana; font-size: 20px; line-height: 19px;&quot;&gt;duration_sa2_hospital_shortest.pkl&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="400" width="660" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="raiURkuCehYe_3hLAczj-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=23;" parent="1" vertex="1">
+          <mxGeometry x="890" y="-60" width="160" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="raiURkuCehYe_3hLAczj-2" value="&lt;h3&gt;Legend&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="950" y="-50" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="raiURkuCehYe_3hLAczj-3" value="Raw Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="910" y="-20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="raiURkuCehYe_3hLAczj-4" value="Processed Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="910" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="raiURkuCehYe_3hLAczj-5" value="Knowledge Graph" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="910" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9S521zGesheabI4XGAvx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=81.25;entryPerimeter=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Ji0h9gqrBowxHyrVGWjA-1" target="D_AaDSEfSIZzOEDVo7i4-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="140" />
+              <mxPoint x="700" y="327" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ji0h9gqrBowxHyrVGWjA-1" value="&lt;h3 style=&quot;font-family: verdana; font-size: 20px;&quot;&gt;SA2Metadata&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="320" y="120" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uL0-QhKHrqkBOUsmK3de-2" value="&lt;h2&gt;Data Integration Overview&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="85" y="-80" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z4Offm902AwKw3nhDxk-1" value="&lt;h3 style=&quot;font-family: helvetica; font-size: 20px; line-height: 19px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;AccessibilityEdges&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z4Offm902AwKw3nhDxk-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=5;" edge="1" parent="1" source="0Z4Offm902AwKw3nhDxk-1" target="D_AaDSEfSIZzOEDVo7i4-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xrRu4EcnShG1vXp3CMwB" name="Hospitals">
+    <mxGraphModel dx="2082" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="hHSy8r-Och2SJdA3nrzx-0" />
+        <mxCell id="hHSy8r-Och2SJdA3nrzx-1" parent="hHSy8r-Och2SJdA3nrzx-0" />
+        <mxCell id="HArUbXiBFGhqf6yhTg8Z-0" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#bac8d3;strokeColor=#23445d;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="-550" y="190" width="1650" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="GKBy7KOu9wrHksl3vBT9-2" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;&lt;br&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="-490" y="220" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GKBy7KOu9wrHksl3vBT9-4" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;&lt;br&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="-20" y="220" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-5" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="290" y="360" width="550" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-6" value="&lt;h3 style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;HospitalMetadata&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="322.5" y="390" width="485" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-7" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;hospital_name&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;phone_number&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;address&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;suburb&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;postcode&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;state&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;local_hospital_network&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;primary_health_network&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="322.5" y="480" width="210" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-8" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;website&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;description&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;sector&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;beds&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;latitude&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;longitude&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;hospital_ID&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="597.5" y="480" width="210" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-9" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="545" y="450" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Verdana;fontColor=#000000;strokeWidth=10;" parent="hHSy8r-Och2SJdA3nrzx-1" source="h-zFkqPWPvurzGXIFvi1-10" target="h-zFkqPWPvurzGXIFvi1-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-10" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="-490" y="360" width="590" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-11" value="&lt;h3 style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;myhospitals-contact-details.csv&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="-460" y="390" width="527.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-12" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Hospital name&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Phone number&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Street address&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Suburb&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Postcode&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;State&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Local Hospital Network (LHN)&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Primary Health Network area (PHN)&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="-460" y="480" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-13" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Website&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Description&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Sector&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Beds&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Latitude&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Longitude&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Hospital_ID&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="-160" y="480" width="227.5" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="h-zFkqPWPvurzGXIFvi1-14" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="-215" y="450" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c_2MHgVKbXsIysvq3is6-0" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=22;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="890" y="240" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c_2MHgVKbXsIysvq3is6-1" value="&lt;h3&gt;Legend&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="950" y="250" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c_2MHgVKbXsIysvq3is6-2" value="Raw Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#d5e8d4;strokeColor=#82b366;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="910" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c_2MHgVKbXsIysvq3is6-3" value="Processed Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="910" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iezF22bTC5Ua97hiE5qO-0" value="&lt;h2&gt;Hospital Metadata Preprocessing&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="hHSy8r-Och2SJdA3nrzx-1" vertex="1">
+          <mxGeometry x="30" y="240" width="480" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="UN4q3NZjBNGZeDe67gBp" name="Distance">
+    <mxGraphModel dx="1232" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="40TYRJMHi4OCxguVAJUR-0" />
+        <mxCell id="40TYRJMHi4OCxguVAJUR-1" parent="40TYRJMHi4OCxguVAJUR-0" />
+        <mxCell id="35w5vwajpGfv2jJVZ-UO-0" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#bac8d3;strokeColor=#23445d;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry y="145" width="1172.5" height="875" as="geometry" />
+        </mxCell>
+        <mxCell id="SR0KQBU79DTY82YH68WX-6" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;&lt;br&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="280" y="520" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SR0KQBU79DTY82YH68WX-9" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;&lt;br&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="220" y="750" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3rtH36aZRa0PMP-_n59d-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=10;fontFamily=Verdana;fontColor=#000000;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="40TYRJMHi4OCxguVAJUR-1" source="frmnId2d5MW0yxW_C2mt-0" target="cnUqC4v3sK4vLLdpBF_q-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="645" y="513" />
+              <mxPoint x="645" y="835" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2pPh6kvkOqmtbYa-o4o-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=10;" edge="1" parent="40TYRJMHi4OCxguVAJUR-1" source="frmnId2d5MW0yxW_C2mt-0" target="rpNhvCPXJe-nXoV-gX6z-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="358" />
+              <mxPoint x="710" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frmnId2d5MW0yxW_C2mt-0" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="165" y="280" width="315" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="frmnId2d5MW0yxW_C2mt-1" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;duration_sa2_hospitals.pkl&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="195" y="310" width="255" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frmnId2d5MW0yxW_C2mt-2" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="302.5" y="370" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="frmnId2d5MW0yxW_C2mt-3" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;verdana&amp;#34; ; font-size: 14px&quot;&gt;SA2_5DIG16&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;time_to_1&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;time_to_2&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;...&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px ; text-align: right&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;time_to_1011&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="190" y="400" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="3rtH36aZRa0PMP-_n59d-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=10;fontFamily=Verdana;fontColor=#000000;" parent="40TYRJMHi4OCxguVAJUR-1" source="cnUqC4v3sK4vLLdpBF_q-8" target="cnUqC4v3sK4vLLdpBF_q-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cnUqC4v3sK4vLLdpBF_q-8" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="100" y="710" width="380" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="cnUqC4v3sK4vLLdpBF_q-9" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;duration_sa2_hospital_shortest.pkl&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="130" y="740" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cnUqC4v3sK4vLLdpBF_q-10" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="270" y="800" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cnUqC4v3sK4vLLdpBF_q-11" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;SA2_5DIG16&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;shortest_time_sec&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;shortest_time_min&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="130" y="830" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OzR30MSaEvlYiVp8JkmQ-0" value="&lt;h2&gt;Hospital Distance Preprocessing&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="40TYRJMHi4OCxguVAJUR-1" vertex="1">
+          <mxGeometry x="341.25" y="190" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b2pPh6kvkOqmtbYa-o4o-0" value="" style="group" vertex="1" connectable="0" parent="40TYRJMHi4OCxguVAJUR-1">
+          <mxGeometry x="810" y="710" width="260" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="cnUqC4v3sK4vLLdpBF_q-4" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" parent="b2pPh6kvkOqmtbYa-o4o-0" vertex="1">
+          <mxGeometry width="260" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="cnUqC4v3sK4vLLdpBF_q-5" value="&lt;h3 style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;HospitalDistance&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="b2pPh6kvkOqmtbYa-o4o-0" vertex="1">
+          <mxGeometry x="30" y="30" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cnUqC4v3sK4vLLdpBF_q-6" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="b2pPh6kvkOqmtbYa-o4o-0" vertex="1">
+          <mxGeometry x="110" y="90" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cnUqC4v3sK4vLLdpBF_q-7" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;SA2_5DIG&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;shortest_time_sec&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;closest_hospital_ID&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" parent="b2pPh6kvkOqmtbYa-o4o-0" vertex="1">
+          <mxGeometry x="47.5" y="120" width="165" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="b2pPh6kvkOqmtbYa-o4o-1" value="" style="group" vertex="1" connectable="0" parent="40TYRJMHi4OCxguVAJUR-1">
+          <mxGeometry x="810" y="425" width="260" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="rpNhvCPXJe-nXoV-gX6z-4" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" vertex="1" parent="b2pPh6kvkOqmtbYa-o4o-1">
+          <mxGeometry width="260" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="rpNhvCPXJe-nXoV-gX6z-5" value="&lt;h3 style=&quot;font-family: &amp;quot;helvetica&amp;quot; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;AccessibilityEdges&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="b2pPh6kvkOqmtbYa-o4o-1">
+          <mxGeometry x="30" y="30" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rpNhvCPXJe-nXoV-gX6z-6" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="b2pPh6kvkOqmtbYa-o4o-1">
+          <mxGeometry x="110" y="90" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rpNhvCPXJe-nXoV-gX6z-7" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;SA2_5DIG&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;span style=&quot;font-family: verdana, sans-serif; font-size: 14px;&quot;&gt;hospital_ID&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;accessible&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;further_than_2h&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" vertex="1" parent="b2pPh6kvkOqmtbYa-o4o-1">
+          <mxGeometry x="47.5" y="120" width="165" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wgsGXwFJ3uMyzgJaTH8E-0" value="" style="group" vertex="1" connectable="0" parent="40TYRJMHi4OCxguVAJUR-1">
+          <mxGeometry x="930" y="190" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="TeCeci1-UQthD3UiK33I-0" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=22;" parent="wgsGXwFJ3uMyzgJaTH8E-0" vertex="1">
+          <mxGeometry width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="TeCeci1-UQthD3UiK33I-1" value="&lt;h3&gt;Legend&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="wgsGXwFJ3uMyzgJaTH8E-0" vertex="1">
+          <mxGeometry x="60" y="10" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TeCeci1-UQthD3UiK33I-2" value="Raw Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#d5e8d4;strokeColor=#82b366;" parent="wgsGXwFJ3uMyzgJaTH8E-0" vertex="1">
+          <mxGeometry x="20" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TeCeci1-UQthD3UiK33I-3" value="Processed Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="wgsGXwFJ3uMyzgJaTH8E-0" vertex="1">
+          <mxGeometry x="20" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9zW0G7RWSUy38F1n-XtX" name="Population">
+    <mxGraphModel dx="2932" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="LNFX3qa21mhge3ky7nyc-0" />
+        <mxCell id="LNFX3qa21mhge3ky7nyc-1" parent="LNFX3qa21mhge3ky7nyc-0" />
+        <mxCell id="k3kzksh8qS5S8kKT4u4K-0" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#bac8d3;strokeColor=#23445d;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-1140" y="450" width="1412.5" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="k3kzksh8qS5S8kKT4u4K-1" value="&lt;h2&gt;Statistical Area Level 2 (SA2) Preprocessing&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-705.62" y="480" width="543.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="j6DUFY52D9d7fQqrkw7a-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="LNFX3qa21mhge3ky7nyc-1" source="j6DUFY52D9d7fQqrkw7a-1" target="Y-uHZ-U5o5PfUiNlTZNo-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-420" y="820" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j6DUFY52D9d7fQqrkw7a-1" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-1070" y="650" width="550" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="8oj3qNEP2ChVBuw9znC8-2" value="&lt;h3 style=&quot;line-height: 19px&quot;&gt;ABS_Population_and_people_by_2021_SA2_(Beta).csv&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-1037.5" y="680" width="485" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8oj3qNEP2ChVBuw9znC8-3" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span&gt;OBJECTID&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;SA2_CODE_2021&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&amp;nbsp;SA2_NAME_2021&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;AREA_ALBERS_SQKM&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;ASGS_LOCI_URI_2021&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;ERP_DATA (Multiple columns)&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-1037.5" y="770" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="8oj3qNEP2ChVBuw9znC8-4" value="&lt;br&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span&gt;BD_DATA (Multiple columns)&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;CENSUS DATA (Multiple columns)&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;ADFS_DATA (Multiple columns)&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;SHAPE_Length&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;SHAPE_Area&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-762.5" y="770" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="8oj3qNEP2ChVBuw9znC8-5" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-815" y="740" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uHZ-U5o5PfUiNlTZNo-0" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-350" y="650" width="320" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uHZ-U5o5PfUiNlTZNo-2" value="&lt;h3&gt;SA2PopulationDistribution&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-322.5" y="680" width="265" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uHZ-U5o5PfUiNlTZNo-3" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-210" y="740" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uHZ-U5o5PfUiNlTZNo-4" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;SA2_5DIG&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;SA2_name&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SA2_area&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SA2_population&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SA2_population_percentage&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SA2_population_density&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="-320" y="770" width="260" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="-h_s8ZSrjSGceQoTh08Z-0" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=19;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="40" y="580" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="-h_s8ZSrjSGceQoTh08Z-1" value="&lt;h3&gt;Legend&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="100" y="590" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="R0uWpytl-C5duEnRAUs0-0" value="Raw Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#d5e8d4;strokeColor=#82b366;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="60" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R0uWpytl-C5duEnRAUs0-1" value="Processed Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="LNFX3qa21mhge3ky7nyc-1" vertex="1">
+          <mxGeometry x="60" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="5qt-jLozPA4BQlkUDpce" name="POSTER-Overview">
+    <mxGraphModel dx="3804" dy="2596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="-120" width="1480" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=193.125;entryPerimeter=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-3" target="VgRR5YOjkwF7bn4_Nq6x-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="620" />
+              <mxPoint x="680" y="439" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-3" value="&lt;h3 style=&quot;font-family: helvetica; font-size: 20px; line-height: 19px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;HospitalMetadata&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="300" y="600" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-5" target="VgRR5YOjkwF7bn4_Nq6x-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-5" value="&lt;h3 style=&quot;font-family: helvetica; font-size: 20px; line-height: 19px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;HospitalDistance&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="300" y="420" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-7" target="VgRR5YOjkwF7bn4_Nq6x-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-7" value="&lt;h3 style=&quot;font-family: verdana; line-height: 19px; font-size: 20px;&quot;&gt;ABS_Population_and_people_by_2021_SA2_(Beta).csv&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="100" width="670" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-10" target="VgRR5YOjkwF7bn4_Nq6x-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-10" target="VgRR5YOjkwF7bn4_Nq6x-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-10" value="&lt;h3 style=&quot;font-family: verdana; font-size: 20px; line-height: 19px;&quot;&gt;duration_sa2_hospitals.pkl&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="280" width="660" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-12" target="VgRR5YOjkwF7bn4_Nq6x-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-12" value="&lt;h3 style=&quot;font-family: helvetica; font-size: 20px; line-height: 19px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;myhospitals-contact-details.csv&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="580" width="660" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-13" value="&lt;h3 style=&quot;font-size: 20px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;Neo4j Knowledge Graph&lt;/font&gt;&lt;/h3&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="750" y="246.25" width="150" height="267.5" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-15" target="VgRR5YOjkwF7bn4_Nq6x-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-15" value="&lt;h3 style=&quot;font-family: verdana; font-size: 20px; line-height: 19px;&quot;&gt;duration_sa2_hospital_shortest.pkl&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="400" width="660" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-16" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=23;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-50" width="160" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-17" value="&lt;h3&gt;Legend&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="780" y="-40" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-18" value="Raw Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="740" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-19" value="Processed Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="740" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-20" value="Knowledge Graph" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="740" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=81.25;entryPerimeter=0;strokeWidth=5;fontFamily=Verdana;fontColor=#000000;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-22" target="VgRR5YOjkwF7bn4_Nq6x-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="140" />
+              <mxPoint x="680" y="327" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-22" value="&lt;h3 style=&quot;font-family: verdana; font-size: 20px;&quot;&gt;SA2Metadata&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-23" value="&lt;h2&gt;Data Integration Overview&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="-80" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-24" value="&lt;h3 style=&quot;font-family: helvetica; font-size: 20px; line-height: 19px;&quot;&gt;&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 20px;&quot;&gt;AccessibilityEdges&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VgRR5YOjkwF7bn4_Nq6x-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=5;" edge="1" parent="1" source="VgRR5YOjkwF7bn4_Nq6x-24" target="VgRR5YOjkwF7bn4_Nq6x-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HbY5RsXNMYoPYewqXB45" name="POSTER-Hospitals">
+    <mxGraphModel dx="3804" dy="1196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5Mt048wRngI5MFpkax-5-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="200" width="1480" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-2" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;&lt;br&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="220" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-3" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;&lt;br&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="220" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-4" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="550" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-5" value="&lt;h3 style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;HospitalMetadata&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="312.5" y="390" width="485" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-6" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;hospital_name&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;phone_number&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;address&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;suburb&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;postcode&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;state&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;local_hospital_network&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;primary_health_network&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="312.5" y="480" width="210" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-7" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;website&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;description&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;sector&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;beds&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;latitude&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;longitude&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;hospital_ID&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="587.5" y="480" width="210" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-8" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="535" y="450" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Verdana;fontColor=#000000;strokeWidth=10;" edge="1" parent="1" source="5Mt048wRngI5MFpkax-5-10" target="5Mt048wRngI5MFpkax-5-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-10" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="360" width="590" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-11" value="&lt;h3 style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;myhospitals-contact-details.csv&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="-470" y="390" width="527.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-12" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Hospital name&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Phone number&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Street address&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Suburb&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Postcode&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;State&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Local Hospital Network (LHN)&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Primary Health Network area (PHN)&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-470" y="480" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-13" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Website&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Description&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Sector&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Beds&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Latitude&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Longitude&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt ; line-height: 14.98px ; font-family: &amp;#34;verdana&amp;#34; , sans-serif&quot;&gt;Hospital_ID&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="480" width="227.5" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-14" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="450" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5Mt048wRngI5MFpkax-5-19" value="&lt;h2&gt;Hospital Metadata Preprocessing&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="240" width="480" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="3GvmCim-CU6e8HLrGVDZ" name="POSTER-Distance">
+    <mxGraphModel dx="2954" dy="1196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1F-_o4vB02_EyES03pTH-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry y="160" width="1480" height="880" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-2" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;&lt;br&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="280" y="535" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-3" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;&lt;br&gt;&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="285" y="765" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=10;fontFamily=Verdana;fontColor=#000000;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="1F-_o4vB02_EyES03pTH-6" target="1F-_o4vB02_EyES03pTH-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="528" />
+              <mxPoint x="680" y="765" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=10;" edge="1" parent="1" source="1F-_o4vB02_EyES03pTH-6" target="1F-_o4vB02_EyES03pTH-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="373" />
+              <mxPoint x="780" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-6" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" vertex="1" parent="1">
+          <mxGeometry x="165" y="295" width="405" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-7" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;duration_sa2_hospitals.pkl&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="195" y="325" width="345" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-8" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="347.5" y="385" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-9" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;verdana&amp;#34; ; font-size: 14px&quot;&gt;SA2_5DIG16&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;time_to_1&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;time_to_2&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;...&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px ; text-align: right&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;time_to_1011&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="190" y="415" width="350" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=10;fontFamily=Verdana;fontColor=#000000;" edge="1" parent="1" source="1F-_o4vB02_EyES03pTH-11" target="1F-_o4vB02_EyES03pTH-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="850" />
+              <mxPoint x="680" y="765" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-11" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" vertex="1" parent="1">
+          <mxGeometry x="165" y="725" width="405" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-12" value="&lt;h3 style=&quot;font-size: 14px ; line-height: 19px&quot;&gt;duration_sa2_hospital_shortest.pkl&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="195" y="755" width="345" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-13" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="347.5" y="815" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-14" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;SA2_5DIG16&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;shortest_time_sec&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;shortest_time_min&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="195" y="845" width="345" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-15" value="&lt;h2&gt;Hospital Distance Preprocessing&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-16" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="940" y="640" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-17" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" vertex="1" parent="1F-_o4vB02_EyES03pTH-16">
+          <mxGeometry width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-18" value="&lt;h3 style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;HospitalDistance&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1F-_o4vB02_EyES03pTH-16">
+          <mxGeometry x="46.15384615384615" y="30" width="307.69230769230774" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-19" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1F-_o4vB02_EyES03pTH-16">
+          <mxGeometry x="169.23076923076923" y="90" width="61.53846153846154" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-20" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;SA2_5DIG&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;shortest_time_sec&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;closest_hospital_ID&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" vertex="1" parent="1F-_o4vB02_EyES03pTH-16">
+          <mxGeometry x="73.07692307692308" y="120" width="253.84615384615387" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="940" y="355" width="400" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-22" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" vertex="1" parent="1F-_o4vB02_EyES03pTH-21">
+          <mxGeometry width="400" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-23" value="&lt;h3 style=&quot;font-family: &amp;quot;helvetica&amp;quot; ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;AccessibilityEdges&lt;/font&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1F-_o4vB02_EyES03pTH-21">
+          <mxGeometry x="46.15384615384615" y="30" width="307.69230769230774" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-24" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1F-_o4vB02_EyES03pTH-21">
+          <mxGeometry x="169.23076923076923" y="90" width="61.53846153846154" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1F-_o4vB02_EyES03pTH-25" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;SA2_5DIG&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;span style=&quot;font-family: verdana, sans-serif; font-size: 14px;&quot;&gt;hospital_ID&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;accessible&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;further_than_2h&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" vertex="1" parent="1F-_o4vB02_EyES03pTH-21">
+          <mxGeometry x="73.07692307692308" y="120" width="253.84615384615387" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EBVejfQ1rhIGH4qC1ZUs-5" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1050" y="200" width="290" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EBVejfQ1rhIGH4qC1ZUs-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=19;" vertex="1" parent="EBVejfQ1rhIGH4qC1ZUs-5">
+          <mxGeometry width="290" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EBVejfQ1rhIGH4qC1ZUs-2" value="&lt;h3&gt;Legend&lt;/h3&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="EBVejfQ1rhIGH4qC1ZUs-5">
+          <mxGeometry x="125" y="10" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EBVejfQ1rhIGH4qC1ZUs-3" value="Raw Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="EBVejfQ1rhIGH4qC1ZUs-5">
+          <mxGeometry x="20" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EBVejfQ1rhIGH4qC1ZUs-4" value="Processed Dataset" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="EBVejfQ1rhIGH4qC1ZUs-5">
+          <mxGeometry x="150" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="FxVABdwmzZf5Q7ogXRK3" name="POSTER-Population">
+    <mxGraphModel dx="4654" dy="1196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="-1140" y="440" width="1480" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-2" value="&lt;h2&gt;Statistical Area Level 2 (SA2) Preprocessing&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="-671.87" y="480" width="543.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="17rizliDJgC34Qn5Ho-Z-4" target="17rizliDJgC34Qn5Ho-Z-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-420" y="760" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2CQzqrRMWWA2Ig5MNkn-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-180" y="590" width="440" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-9" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-1">
+          <mxGeometry width="440" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-10" value="&lt;h3&gt;SA2PopulationDistribution&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-1">
+          <mxGeometry x="37.8125" y="30" width="364.375" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-11" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-1">
+          <mxGeometry x="192.5" y="90" width="55" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-12" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;SA2_5DIG&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;quot;helvetica&amp;quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;SA2_name&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SA2_area&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SA2_population&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SA2_population_percentage&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;&quot;&gt;&lt;font face=&quot;verdana, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SA2_population_density&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;verticalAlign=middle;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-1">
+          <mxGeometry x="41.25" y="120" width="357.5" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="a2CQzqrRMWWA2Ig5MNkn-2" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-1060" y="590" width="550" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-4" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-2">
+          <mxGeometry width="550" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-5" value="&lt;h3 style=&quot;line-height: 19px&quot;&gt;ABS_Population_and_people_by_2021_SA2_(Beta).csv&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;arcSize=50;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-2">
+          <mxGeometry x="32.5" y="30" width="485" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-6" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span&gt;OBJECTID&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;SA2_CODE_2021&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&amp;nbsp;SA2_NAME_2021&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;AREA_ALBERS_SQKM&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;ASGS_LOCI_URI_2021&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;ERP_DATA (Multiple columns)&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-2">
+          <mxGeometry x="32.5" y="120" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-7" value="&lt;br&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span&gt;BD_DATA (Multiple columns)&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;CENSUS DATA (Multiple columns)&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;ADFS_DATA (Multiple columns)&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;SHAPE_Length&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;SHAPE_Area&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-2">
+          <mxGeometry x="307.5" y="120" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="17rizliDJgC34Qn5Ho-Z-8" value="&#xa;&#xa;&lt;b style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 14px; font-style: normal; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;&lt;font face=&quot;Verdana&quot;&gt;Columns:&lt;/font&gt;&lt;/b&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="a2CQzqrRMWWA2Ig5MNkn-2">
+          <mxGeometry x="255" y="90" width="40" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
