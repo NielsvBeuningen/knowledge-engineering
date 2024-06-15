@@ -165,6 +165,65 @@ with tab1:
                         
                         } for record in data]
                     filtered_data = pd.DataFrame(filtered_data)
+                    
+                    if method == "Group by Hospital":
+                        filtered_data = filtered_data.groupby("hospital_name").agg(
+                            {
+                                "sa2": "count",
+                                "distance (seconds)": "mean",
+                                "accessible": "mean",
+                                "further_than_2_hours": "mean"
+                                }
+                            )
+                        # Multiply by 100 to get percentage
+                        filtered_data["accessible"] = round(filtered_data["accessible"] * 100, 2)
+                        filtered_data["further_than_2_hours"] = round(filtered_data["further_than_2_hours"] * 100)
+                        
+                        # Rename index
+                        filtered_data.index.name = "Hospital Name"
+                        
+                        # Rename columns
+                        filtered_data.columns = [
+                            "Number of SA2s",
+                            "Mean Distance (seconds)",
+                            "Accessible (%)",
+                            "Further than 2 hours (%)"
+                            ]
+                        
+                    elif method == "Group by SA2":
+                        filtered_data = filtered_data.groupby("sa2").agg(
+                            {
+                                "hospital_name": "count",
+                                "distance (seconds)": "mean",
+                                "accessible": "mean",
+                                "further_than_2_hours": "mean"
+                                }
+                            ) 
+                        
+                        # Multiply by 100 to get percentage
+                        filtered_data["accessible"] = round(filtered_data["accessible"] * 100, 2)
+                        filtered_data["further_than_2_hours"] = round(filtered_data["further_than_2_hours"] * 100, 2)
+                    
+                        # Rename index
+                        filtered_data.index.name = "SA2 Name"
+                    
+                        # Rename columns
+                        filtered_data.columns = [
+                            "Number of Hospitals",
+                            "Mean Distance (seconds)",
+                            "Accessible (%)",
+                            "Further than 2 hours (%)"
+                            ]
+                        
+                    else:
+                        filtered_data.columns = [
+                            "Hospital Name",
+                            "SA2 Name",
+                            "Distance (seconds)",
+                            "Accessible",
+                            "Further than 2 hours"
+                            ]
+                    
                 else:
                     filtered_data = []
             
