@@ -203,7 +203,7 @@ with tab1:
                         # Multiply by 100 to get percentage
                         filtered_data["accessible"] = round(filtered_data["accessible"] * 100, 2)
                         filtered_data["further_than_2_hours"] = round(filtered_data["further_than_2_hours"] * 100, 2)
-                    
+
                         # Rename index
                         filtered_data.index.name = "SA2 Name"
                     

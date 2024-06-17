@@ -49,22 +49,32 @@ MESSAGES:
 DEFAULT_QUERY: "MATCH (n)-[r]->(m) RETURN n, r, m"
 
 EXAMPLE_QUERIES:
-  show_all:
-    query: "MATCH (n) RETURN n"
-    description: "Show all nodes in the database"
-    key: "show_all"
-  show_hospitals:
-    query: "MATCH (n:Hospital) RETURN n"
-    description: "Show all hospitals in the database"
-    key: "show_hospitals"
-  show_sa2:
-    query: "MATCH (n:SA2) RETURN n"
-    description: "Show all SA2s in the database"
-    key: "show_sa2"
+  # show_all:
+  #   query: "MATCH (n) RETURN n"
+  #   description: "Show all nodes in the database"
+  #   key: "show_all"
+  # show_hospitals:
+  #   query: "MATCH (n:Hospital) RETURN n"
+  #   description: "Show all hospitals in the database"
+  #   key: "show_hospitals"
+  # show_sa2:
+  #   query: "MATCH (n:SA2) RETURN n"
+  #   description: "Show all SA2s in the database"
+  #   key: "show_sa2"
   show_edges:
     query: "MATCH (n)-[r]->(m) RETURN n, r, m"
     description: "Show all edges in the database"
     key: "show_edges"
+  not_accessible:
+  # Match all SA2s that do not have a hospital for which the relation is accessible,
+  # So only the SA2s where distance is larger than 30 minutes
+    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA]->(m:SA2) WHERE r.distance_time > 1800 RETURN n, r, m"
+    description: "Are there any SA2 areas that are not accessible?"
+    key: "not_accessible"
+  most_accessible:
+    query:
+    description: "Which SA2 areas are the most accessible?"
+    key: "most_accessible"
   show_accessible:
     query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {accessible: True}]->(m:SA2) RETURN n, r, m"
     description: "Show all hospitals that are accessible from SA2s"
