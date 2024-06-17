@@ -9,6 +9,7 @@ import yaml
 from yaml.loader import SafeLoader
 
 import pandas as pd
+import numpy as np
 
 try:
     if "config" not in st.session_state:
@@ -170,7 +171,7 @@ with tab1:
                         filtered_data = filtered_data.groupby("hospital_name").agg(
                             {
                                 "sa2": "count",
-                                "distance (seconds)": "mean",
+                                "distance (seconds)": ["mean", "min", "max"],
                                 "accessible": "mean",
                                 "further_than_2_hours": "mean"
                                 }
@@ -186,23 +187,25 @@ with tab1:
                         filtered_data.columns = [
                             "Number of SA2s",
                             "Mean Distance (seconds)",
-                            "Accessible (%)",
-                            "Further than 2 hours (%)"
+                            "Min Distance (seconds)",
+                            "Max Distance (seconds)",
+                            "Mean Accessible (%)",
+                            "Mean Further than 2 hours (%)"
                             ]
                         
                     elif method == "Group by SA2":
                         filtered_data = filtered_data.groupby("sa2").agg(
                             {
                                 "hospital_name": "count",
-                                "distance (seconds)": "mean",
+                                "distance (seconds)": ["mean", "min", "max"],
                                 "accessible": "mean",
                                 "further_than_2_hours": "mean"
                                 }
-                            ) 
+                            )
                         
                         # Multiply by 100 to get percentage
                         filtered_data["accessible"] = round(filtered_data["accessible"] * 100, 2)
-                        filtered_data["further_than_2_hours"] = round(filtered_data["further_than_2_hours"] * 100, 2)
+                        filtered_data["further_than_2_hours"] = round(filtered_data["further_than_2_hours"] * 100, 2) 
 
                         # Rename index
                         filtered_data.index.name = "SA2 Name"
@@ -211,15 +214,17 @@ with tab1:
                         filtered_data.columns = [
                             "Number of Hospitals",
                             "Mean Distance (seconds)",
-                            "Accessible (%)",
-                            "Further than 2 hours (%)"
+                            "Min Distance (seconds)",
+                            "Max Distance (seconds)",
+                            "Mean Accessible (%)",
+                            "Mean Further than 2 hours (%)"
                             ]
                         
                     else:
                         filtered_data.columns = [
                             "Hospital Name",
                             "SA2 Name",
-                            "Distance (seconds)",
+                            "Mean Distance (seconds)",
                             "Accessible",
                             "Further than 2 hours"
                             ]
