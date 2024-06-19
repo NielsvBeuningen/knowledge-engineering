@@ -67,26 +67,43 @@ class GraphDB:
         )
         tx.run(query, hospital_id=hospital_id, sa2_5dig=sa2_5dig, distance_time=float(distance_time), accessible=accessible, further_than_2h=further_than_2h)
       
-    def run_query(self, query: str, query_limit: int) -> list | Exception:
+    def run_query(self, query: str, query_limit: int, example_key: str) -> list | Exception:
         with self.driver.session(database=self.database) as session:     
             graph = []   
             query = f"{query} LIMIT {query_limit}"
             result = session.run(query)
-            for record in result:
-                if record[0].labels == {"Hospital"}:
-                    graph.append(
-                        {
-                            "hospital": record[0], 
-                            "sa2": record[2], 
-                            "relation": record[1]
-                        })
-                else:
-                    graph.append(
-                        {
-                            "hospital": record[2], 
-                            "sa2": record[0], 
-                            "relation": record[1]
-                        })
+            
+            # If the query is one of the example queries, we need to convert the result to a dictionary
+            if st.session_state.example_key in [
+                "most_accessible",
+                "population_to_beds",
+                "least_hospitals",
+                "distance_ratio"
+            ]:
+                for record in result:
+                    # Convert record to proper dictionary
+                    record_dict = {}
+                    for key in record.keys():
+                        record_dict[key] = record[key]
+                    
+                    graph.append(record_dict)
+            else:
+                # Else we can just append the result to the graph list as hostpital, sa2, relation
+                for record in result:
+                    if record[0].labels == {"Hospital"}:
+                        graph.append(
+                            {
+                                "hospital": record[0], 
+                                "sa2": record[2], 
+                                "relation": record[1]
+                            })
+                    else:
+                        graph.append(
+                            {
+                                "hospital": record[2], 
+                                "sa2": record[0], 
+                                "relation": record[1]
+                            })
         return graph
 
         

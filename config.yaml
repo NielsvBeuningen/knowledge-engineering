@@ -49,37 +49,81 @@ MESSAGES:
 DEFAULT_QUERY: "MATCH (n)-[r]->(m) RETURN n, r, m"
 
 EXAMPLE_QUERIES:
-  # show_all:
-  #   query: "MATCH (n) RETURN n"
-  #   description: "Show all nodes in the database"
-  #   key: "show_all"
-  # show_hospitals:
-  #   query: "MATCH (n:Hospital) RETURN n"
-  #   description: "Show all hospitals in the database"
-  #   key: "show_hospitals"
-  # show_sa2:
-  #   query: "MATCH (n:SA2) RETURN n"
-  #   description: "Show all SA2s in the database"
-  #   key: "show_sa2"
   show_edges:
     query: "MATCH (n)-[r]->(m) RETURN n, r, m"
     description: "Show all edges in the database"
     key: "show_edges"
+    limit: True
   not_accessible:
-  # Match all SA2s that do not have a hospital for which the relation is accessible,
-  # So only the SA2s where distance is larger than 30 minutes
-    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA]->(m:SA2) WHERE r.distance_time > 1800 RETURN n, r, m"
-    description: "Are there any SA2 areas that are not accessible?"
+    query: "
+      MATCH (sa2:SA2)
+      WHERE NOT EXISTS {
+        MATCH (sa2)<-[:REACHABLE_VIA {accessible: True}]-(:Hospital)
+      }
+      RETURN sa2
+      "
+    description: "SA2 areas with no accessible hospitals (distance > 30 minutes)."
     key: "not_accessible"
-  most_accessible:
-    query:
-    description: "Which SA2 areas are the most accessible?"
-    key: "most_accessible"
+    limit: True
+  population_to_beds:
+    query: "
+      MATCH (sa2:SA2)<-[:REACHABLE_VIA]-(h:Hospital)
+      WITH sa2.sa2_name AS SA2Area, sa2.population AS Population, 
+          CASE
+            WHEN h.beds CONTAINS '<' THEN toInteger(REPLACE(h.beds, '<', ''))
+            WHEN h.beds CONTAINS '>' THEN toInteger(REPLACE(h.beds, '>', ''))
+            ELSE toInteger(h.beds)
+          END AS Beds
+      WITH SA2Area, Population, SUM(Beds) AS TotalBeds
+      RETURN SA2Area, Population, TotalBeds, 
+            CASE
+              WHEN TotalBeds = 0 THEN NULL
+              ELSE Population / TotalBeds
+            END AS Ratio
+      "
+    description: "Relation between population and number of beds in hospitals in SA2 areas."
+    key: "population_to_beds"
+    limit: True
   show_accessible:
     query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {accessible: True}]->(m:SA2) RETURN n, r, m"
     description: "Show all hospitals that are accessible from SA2s"
     key: "show_accessible_hospitals"
-  show_further_2h:
-    query: "MATCH (n:Hospital)-[r:REACHABLE_VIA {further_than_2h: True}]->(m:SA2) RETURN n, r, m"
-    description: "Show all hospitals that are 2 hours away from SA2s"
-    key: "show_further_2h"
+    limit: True
+  most_accessible:
+    query: "
+      MATCH (sa2:SA2)<-[:REACHABLE_VIA {accessible: True}]-(h:Hospital)
+      WITH h.state AS State, COUNT(DISTINCT h) AS AccessibleHospitals
+      RETURN State, AccessibleHospitals
+      ORDER BY AccessibleHospitals DESC
+      "
+    description: "States with the most number of accessible hospitals"
+    key: "most_accessible"
+    limit: True
+  least_hospitals:
+    query: "
+      MATCH (sa2:SA2)<-[:REACHABLE_VIA]-(h:Hospital)
+      WITH sa2.sa2_name AS SA2Area, COUNT(DISTINCT h) AS HospitalCount
+      ORDER BY HospitalCount ASC
+      RETURN SA2Area, HospitalCount
+      "
+    description: "SA2 areas with the least number of hospitals"
+    key: "least_hospitals"
+    limit: True
+  distance_ratio:
+    query: "
+      MATCH (sa2:SA2)<-[r:REACHABLE_VIA]-(h:Hospital)
+      WITH sa2, h, r.distance_time AS Distance
+      ORDER BY sa2.sa2_name, Distance
+      WITH sa2, COLLECT(Distance) AS Distances
+      RETURN sa2.sa2_name AS SA2Area,
+            HEAD(Distances) AS ClosestHospitalDistance,
+            LAST(Distances) AS FurthestHospitalDistance,
+            CASE
+              WHEN HEAD(Distances) = 0 THEN 'Undefined'
+              ELSE (TOFLOAT(LAST(Distances)) / TOFLOAT(HEAD(Distances)))
+            END AS DistanceRatio
+      ORDER BY DistanceRatio DESC
+      "
+    description: "Ratio of distance between closest and furthest hospital in SA2 areas"
+    key: "distance_ratio"
+    limit: True
