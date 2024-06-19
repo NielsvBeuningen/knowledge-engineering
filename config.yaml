@@ -62,7 +62,7 @@ EXAMPLE_QUERIES:
       }
       RETURN sa2
       "
-    description: "SA2 areas with no accessible hospitals (distance > 30 minutes)."
+    description: "Show SA2 areas with no accessible hospitals (distance > 30 minutes)"
     key: "not_accessible"
     limit: True
   population_to_beds:
@@ -81,7 +81,7 @@ EXAMPLE_QUERIES:
               ELSE Population / TotalBeds
             END AS Ratio
       "
-    description: "Relation between population and number of beds in hospitals in SA2 areas."
+    description: "Show the relation between population and number of beds in hospitals in SA2 areas"
     key: "population_to_beds"
     limit: True
   show_accessible:
@@ -96,7 +96,7 @@ EXAMPLE_QUERIES:
       RETURN State, AccessibleHospitals
       ORDER BY AccessibleHospitals DESC
       "
-    description: "States with the most number of accessible hospitals"
+    description: "Show the states with the most accessible hospitals"
     key: "most_accessible"
     limit: True
   least_hospitals:
@@ -106,7 +106,7 @@ EXAMPLE_QUERIES:
       ORDER BY HospitalCount ASC
       RETURN SA2Area, HospitalCount
       "
-    description: "SA2 areas with the least number of hospitals"
+    description: "SA2 areas with the least hospitals"
     key: "least_hospitals"
     limit: True
   distance_ratio:
